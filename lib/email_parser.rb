@@ -21,7 +21,7 @@ end
 
 def parse
   new_email = @email.split(/[, ]/).uniq
-  @email
+  new_email = 
 end
 
 end
