@@ -20,7 +20,7 @@ end
 
 
 def parse
-  new_email = @email.split(/\s*,\s*/).collect do |address|
+  new_email = email.split(/\s*,\s*/).collect do |address|
   @@all << address
   end
   @@all
