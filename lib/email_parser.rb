@@ -21,8 +21,6 @@ end
 
 def parse
   new_email = @email.split.reverse.uniq.reverse.join(' ')
-  new_email.collect do |address|
-  @@all << address
   end
   @@all
 end
