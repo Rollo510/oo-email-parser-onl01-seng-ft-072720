@@ -21,7 +21,9 @@ end
 
 def parse
   new_email = @email.split(/[, ]/).uniq
-  new_email.
+  new_email.delete_if? do |x|
+    x.empty?
+  end
 end
 
 end
