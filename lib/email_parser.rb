@@ -20,8 +20,8 @@ end
 
 
 def parse
-  new_email = @@all.split.reverse.uniq.reverse.join(' ')
-  new_email.split(",")
+  new_email = @email.split(" ") 
+  @email.split.reverse.uniq.reverse.join(' ')
   @@all
 end
 
