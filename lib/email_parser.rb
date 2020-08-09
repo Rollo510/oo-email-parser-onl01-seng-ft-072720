@@ -21,7 +21,7 @@ end
 
 def parse
   new_email = @email.split(/[, ]/).uniq
-  new_email.reject? do |x|
+  new_email.reject do |x|
     x.empty?
   end
 end
