@@ -20,7 +20,8 @@ end
 
 
 def parse
-  new_email = @email.split(/[, ]/).collect do |address|
+  new_email = @email.uniq
+  @email.split(/[, ]/).collect do |address|
   @@all << address
   end
   @@all
