@@ -21,7 +21,7 @@ end
 
 def parse
   new_email = @email.split(" ") 
-  @email.split.reverse.uniq.reverse.join(' ')
+  @email.reverse.uniq.reverse.join(' ')
   @@all
 end
 
